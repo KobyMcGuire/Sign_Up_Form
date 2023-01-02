@@ -1,4 +1,5 @@
 * {
+    appearance: none;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -11,11 +12,16 @@ body, html {
 
 body {
     display: flex;
+    font-family: sans-serif;
 }
+/* Stlying for the left side of the page */
 
 .left-side {
     min-width: 25vw;
 }
+ 
+
+/* Styling for the right side of the page */
 
 .right-side {
     min-width: 75vw;
@@ -23,14 +29,105 @@ body {
 
 .top-header {
     min-height: 35vh;
+    padding: 50px;
+    
+    background-color: rgba(241, 241, 241, 0.753);
+
+    position: relative;
 }
+
+.top-header-text {
+    width: 30vw;
+
+    position: absolute;
+    top: 15vh;
+}
+
+.top-text {
+    margin-bottom: 15px;
+}
+
 
 .middle {
     min-height: 30vh;
+    padding: 50px;
+}
+
+.form-header {
+
+    margin-top: -10px;
+    margin-bottom: 10px;
+
+}
+
+form {
+    display: flex;
+}
+
+.left-column {
+    display: flex;
+    flex-direction: column;
+
+    margin-right: 100px;
+}
+
+.right-column {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    padding: 3px;
+    margin-top: 5px;
+}
+
+input {
+    border: 1px solid black;
+    border-radius: 5px;
+
+    width: 250px;
+    height: 2em;
+
+    padding: 2px;
+
 }
 
 .bottom {
     min-height: 35vh;
+    padding: 50px;
+
+    background-color: rgba(241, 241, 241, 0.753);
+}
+
+button {
+    font-size: large;
+    padding: 10px;
+
+    height: 50px;
+    width: 250px;
+
+    background-color: rgb(85, 160, 85);
+    color: white;
+
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+p {
+    margin-top: 10px;
+}
+
+a {
+    color: rgb(85, 160, 85);
+    text-decoration: none;
+}
+
+a:visited {
+    color: rgb(85, 160, 85);
 }
 
 
