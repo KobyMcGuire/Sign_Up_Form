@@ -14,12 +14,9 @@
 <body>
 
     <div class="left-side">
-
-        <img src="photo-1516339901601-2e1b62dc0c45.avif"/>
- 
+        <img src="photo-1585202900225-6d3ac20a6962.avif"/>
         <div class="layover-text">
         </div>
-
     </div>
 
 
@@ -38,14 +35,19 @@
             <h2 class="form-header">Let's do this!</h2>
             <form>
                 <div class="left-column">
-                    <label for="firstname">First Name</label>
-                    <input id="firstname" type="text" name="firstname">
+                    <label for="firstname">First Name*</label>
+                    <input id="firstname" type="text" name="firstname" required>
+                    <span class="req"></span>
 
-                    <label for="useremail">Email</label>
-                    <input id="useremail" type="email" name="useremail">
+                    <label for="useremail">Email*</label>
+                    <input id="useremail" type="email" name="useremail" required>
+                    <span class="req"></span>
 
-                    <label for="userpassword">Password</label>
-                    <input id="userpassword" type="password" name="userpassword">
+                    <label for="userpassword">Password*</label>
+                    <input id="userpassword" type="password" name="userpassword" required>
+                    <span class="req"></span>
+                    <!-- Span that will hold passwords not matching error-->
+                    <span id="holdError"></span>
                 </div>
 
                 <div class="right-column">
@@ -55,8 +57,9 @@
                     <label for="phone-number">Phone Number</label>
                     <input id="phone-number" type="tel" name="phone-number">
 
-                    <label for="confirmpass">Confirm Password</label>
-                    <input id="confirmpassword" type="password" name="confirmpassword">
+                    <label for="confirmpass">Confirm Password*</label>
+                    <input id="confirmpassword" type="password" name="confirmpassword" required>
+                    <span class="req"></span>
                 </div>
             </form>
         </div>

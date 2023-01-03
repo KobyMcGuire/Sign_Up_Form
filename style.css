@@ -13,7 +13,6 @@ body, html {
 body {
     display: flex;
     font-family: sans-serif;
-    overflow: hidden;    
 }
 /* Stlying for the left side of the page */
 
@@ -53,6 +52,8 @@ img {
     min-width: 75vw;
 }
 
+/*Styling for the top portion of the page */
+
 .top-header {
     min-height: 35vh;
     padding: 50px;
@@ -74,6 +75,8 @@ img {
 }
 
 
+/* Styling for the middle portion of the page */
+
 .middle {
     min-height: 30vh;
     padding: 50px;
@@ -88,6 +91,9 @@ img {
 
 form {
     display: flex;
+
+    width: 400px;
+    height: 200px;
 }
 
 .left-column {
@@ -95,11 +101,15 @@ form {
     flex-direction: column;
 
     margin-right: 100px;
+
+    position: relative;
 }
 
 .right-column {
     display: flex;
     flex-direction: column;
+
+    position: relative;
 }
 
 label {
@@ -117,6 +127,37 @@ input {
     padding: 2px;
 
 }
+
+
+.req::after {
+    content: "Required";
+
+    background-color: black;
+    color: white;
+
+    padding: 3px;
+
+    position: absolute;
+    left: 180px;
+}
+
+/*Error class that is applied to show that required fields have not been filled out */ 
+
+.error {
+    border: 1px solid red;
+}
+
+.noMatchError::after {
+    content: "*Passwords do not match";
+
+    color: red;
+
+    font-size: small;
+}
+
+
+
+/* Styling for the bottom portion of the page */
 
 .bottom {
     min-height: 30vh;
